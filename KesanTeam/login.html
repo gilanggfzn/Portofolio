@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login page</title>
+</head>
+<body>
+    <fieldset>
+    <legend style="text-align: center; font-size: 30pt;">Halaman Login</legend>
+    <form method="post" style="text-align: center; font-style: italic;" >
+
+        <div class="container">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.TOtpLoaUf3l_eHNK5amDkQHaFj%26pid%3DApi&f=1"><br><br>
+          <label for="uname" style="font-size: 30px;"><b>Username</b></label><br><br>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+            <br><br>
+          <label for="psw" style="font-size: 30px; font-style: italic;"><b>Password</b></label><br><br>
+          <input type="password" placeholder="Enter Password" name="psw" required pattern="[A-Z]{2}[a-z]{3}[0-9]{2}" title="huruf besar 2 huruf kecil 6 angka 2">
+          <br><br>
+            <input type="checkbox" checked="checked" name="remember"> Remember Me
+            <a href="index.html"><button>Login</button></a>
+            <button type="reset" class="cancelbtn">Reset</button>
+            <br><br>
+            <span class="psw"><a href="#">Forgot password?</a></span>
+          <br><br>
+        </div>
+      </form> 
+    </fieldset>   
+</body>
+</html>

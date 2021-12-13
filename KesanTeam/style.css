@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.navbar {
+    background-color: #cca01d;
+}
+
+.thumbnail {
+    color: #b8860b;
+    padding-top: 4rem;
+    font-family: Pacifico,Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand {
+    font-family: Pacifico,Arial, Helvetica, sans-serif;
+}
+
+#about {
+    padding-top: 200px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.col1{
+    border-radius: 50%;
+}
+
+section{
+    padding-top: 8rem;
+    
+}

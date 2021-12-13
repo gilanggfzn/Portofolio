@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 8 Praktikum jquery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").dblclick(function(){
+                $(this).hide();
+        })
+        $('#btn-atas').click(function(){
+            $('#menu-slide').slideUp('slow');
+        })
+        $('#btn-bawah').click(function(){
+            $('#menu-slide').slideDown('slow');
+        })
+        $('#btn-toggle').click(function(){
+            $('#menu-slide').slideToggle('fast');
+        })
+        })
+        
+    </script>
+</head>
+
+<body>
+    <h2>
+        Pertemuan 8 pemrograman website kelas G
+    </h2>
+    <p>
+        Muhamad Gilang Fauzan
+    </p>
+    <p>
+        202031259
+    </p>
+    <div id="menu-slide">
+        Hallo disini akan muncul tulisan
+    </div>
+    <input type="button" name="button" id="btn-atas" value="Slide-Up">
+    <input type="button" name="button" id="btn-bawah" value="Slide-Down">
+    <input type="button" name="button" id="btn-toggle" value="Slide-Toggle">
+
+
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1/3</div>
+            <img src="images/Screenshot (31).png" alt="Gambar 1" style="width: 1080px">
+            <div class="text">ini adalah gambar 1</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2/3</div>
+            <img src="images/mer.png" alt="Gambar 2" style="width: 1080px">
+            <div class="text">ini adalah gambar 2</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3/3</div>
+            <img src="images/sage.png" alt="Gambar 3" style="width: 1080px">
+            <div class="text">ini adalah gambar 3</div>
+        </div>
+        <!-- Tombol Kanan Kiri-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- Indikator Slides-->
+    <div style="text-align:center ;">
+        <span class="dot " onclick="currentSlide(1)"></span>
+        <span class="dot " onclick="currentSlide(2)"></span>
+        <span class="dot " onclick="currentSlide(3)"></span>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
